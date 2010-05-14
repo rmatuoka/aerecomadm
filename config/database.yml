@@ -45,7 +45,7 @@ production:
   database: gruporecom
   pool: 5
   username: gruporecom
-  password: recom010
+  password: rec010
   socket: /var/run/mysqld/mysqld.sock
   host: 187.35.155.211
   
