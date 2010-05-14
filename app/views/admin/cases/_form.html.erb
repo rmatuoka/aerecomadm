@@ -1,0 +1,37 @@
+<% if flash[:msg] %>
+<div id="mensagem">
+	<h2><%=flash[:msg]%></h2>
+</div>
+<% end %>
+
+<% form_for([:admin, @Case], :html => { :multipart => :true }) do |f| %>
+	<%=f.error_messages%>
+	<label>
+		Nome:<br>
+		<%=f.text_field :title %><br>
+	</label><br><br>
+	
+	<label>
+		Resumo (Home):<br>
+		<%=f.text_field :sumary %><br>
+	</label><br><br>
+	
+	<label>
+		Case:<br>
+		<%=f.text_area :body, :class => "mceEditor" %><br>
+	</label><br><br>
+	
+	<label>
+		Imagem (Home):<br>
+		<%=f.file_field :image %><br>
+	</label><br><br>
+	
+	<label>
+		Publicado?<br>
+		<%=f.radio_button :published, 0 %> Não
+		<%=f.radio_button :published, 1 %> Sim  
+	</label><br><br>
+	
+	
+	<button type="submit">Salvar</button>
+<% end %>
