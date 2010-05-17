@@ -2,7 +2,7 @@ class CreateEvents < ActiveRecord::Migration
   def self.up
     create_table :events do |t|
       t.string :title
-      t.string :description
+      t.text :description
       t.datetime :date_start
       t.datetime :date_end
       t.integer :published
