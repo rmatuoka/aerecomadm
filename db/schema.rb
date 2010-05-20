@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100512010612) do
+ActiveRecord::Schema.define(:version => 20100520180352) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "cases", :force => true do |t|
     t.string   "title"
     t.string   "sumary"
-    t.string   "body"
+    t.text     "body"
     t.integer  "published",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -84,10 +84,10 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description",        :limit => 255
     t.datetime "date_start"
     t.datetime "date_end"
-    t.integer  "published",          :default => 0
+    t.integer  "published",                         :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
   create_table "highlights", :force => true do |t|
     t.string   "title"
     t.string   "link"
+    t.integer  "position"
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -181,6 +182,14 @@ ActiveRecord::Schema.define(:version => 20100512010612) do
     t.string   "video_content_type"
     t.integer  "video_file_size"
     t.datetime "video_updated_at"
+    t.string   "code"
+    t.string   "compatibility"
+    t.string   "color"
+    t.string   "rendimento"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "request_catalogs", :force => true do |t|

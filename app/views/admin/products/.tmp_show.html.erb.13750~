@@ -11,13 +11,7 @@
 		
 		<div id="Grid">
 			<h3><%=@Product.title%></h3><br>
-			<b>Descrição</b><br>
-			<%=@Product.description%><br/><br/>
-			Código: <%=@Product.code%><br/><br/>
-			Compatibilidade: <%=@Product.compatibility%><br/><br/>
-			Cor: <%=@Product.color%><br/><br/>
-			Rendimento: <%=@Product.rendimento%><br/><br/>
-			<img src="<%=@Product.image.url("media")%>"><br>
+			<%=@Product.description%>
 		</div>
 		<div class="Linha"></div>
 	</div>

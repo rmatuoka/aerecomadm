@@ -47,11 +47,6 @@
 	</label><br><br>
 	
 	<label>
-		Imagem:<br>
-		<%=f.file_field :image %><br>
-	</label><br><br>
-	
-	<label>
 		Publicado?<br>
 		<%=f.radio_button :published, 0 %> Não
 		<%=f.radio_button :published, 1 %> Sim  

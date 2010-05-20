@@ -64,17 +64,17 @@ $(document).ready(function(){
 				<a href="<%=admin_notices_path%>">notícias</a>
 			</li>
 			
-			<!-- <li class="MenuItem Cases">
+			<li class="MenuItem Cases">
 				<a href="<%=admin_cases_path%>">cases</a>
-			</li> -->
+			</li>
 			
 			<li class="MenuItem Produtos">
 				<a href="<%=admin_sections_path%>">produtos</a>
 			</li>
 			
-			<!-- <li class="MenuItem Eventos">
+			<li class="MenuItem Eventos">
 				<a href="<%=admin_events_path%>">eventos</a>
-			</li> -->
+			</li>
 			
 			<li class="MenuItem Newsreaders">
 				<a href="<%=admin_newsletters_path%>">newsreaders</a>
@@ -84,9 +84,9 @@ $(document).ready(function(){
 				<a href="<%=admin_contacts_path%>">contatos</a>
 			</li>
 			
-			<!-- <li class="MenuItem Visitas">
+			<li class="MenuItem Visitas">
 				<a href="<%=admin_schedule_visits_path%>">visitas</a>
-			</li> -->
+			</li>
 
 		</div>
 	

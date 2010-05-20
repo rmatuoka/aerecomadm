@@ -27,7 +27,7 @@
 				<%=linkPub%>
 				
 				
-				<%=link_to l.title, admin_section_path(l) %></li></td>
+				<%=link_to l.title, admin_section_categories_path(l) %></li></td>
 			<td class="Actions">
 				<li class="Edit"><%= link_to "Editar", edit_admin_section_path(l)%></li>
 				<li class="Del"><%= link_to "Excluir", admin_section_path(l), :method => :delete, :confirm => "Tem certeza?"%></li>
