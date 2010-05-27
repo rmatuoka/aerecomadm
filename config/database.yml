@@ -47,6 +47,6 @@ production:
   username: gruporecom
   password: rec010
   socket: /var/run/mysqld/mysqld.sock
-  host: 187.35.155.211
+  host: mysql01.gruporecom.com.br
   
   
