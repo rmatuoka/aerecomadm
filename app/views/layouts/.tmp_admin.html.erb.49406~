@@ -84,9 +84,9 @@ $(document).ready(function(){
 				<a href="<%=admin_contacts_path%>">contatos</a>
 			</li>
 			
-			<li class="MenuItem Produtos">
-				<a href="<%=admin_prints_path%>">impressoras</a>
-			</li>
+			<!-- <li class="MenuItem Visitas">
+				<a href="<%=admin_schedule_visits_path%>">visitas</a>
+			</li> -->
 
 		</div>
 	

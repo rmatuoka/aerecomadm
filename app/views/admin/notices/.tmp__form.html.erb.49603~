@@ -15,11 +15,6 @@
 		Imagem Home:<br>
 		<%=f.file_field :image %><br>
 	</label><br><br>
-
-	<label>
-		PDF:<br>
-		<%=f.file_field :pdf %><br>
-	</label><br><br>	
 	
 	<label>
 		Resumo:<br>

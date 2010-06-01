@@ -1,0 +1,20 @@
+<div id="Breadcrumb">
+		administração > <a href="<%=admin_prints_path%>">impressoras</a>
+	</div>
+	<div id="Content">
+		<span class="Titulo">Impressora</span>
+		<div class="Linha"></div>
+		<div class="Toolbar">
+			<li class="Add"><%= link_to "Novo" , new_admin_print_path%></li>
+			<li class="Help"><a href="#">Ajuda</a></li>
+		</div>
+		
+		<div id="Grid">
+			<h3><%=@Print.title%></h3><br>
+			<b>Descrição</b><br>
+			<%=@Print.description%><br/><br/>
+			<img src="<%=@Print.image.url("media")%>"><br>
+		</div>
+		<div class="Linha"></div>
+	</div>
+
