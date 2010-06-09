@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100601185907) do
+ActiveRecord::Schema.define(:version => 20100609191539) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
@@ -160,7 +160,7 @@ ActiveRecord::Schema.define(:version => 20100601185907) do
 
   create_table "prints", :force => true do |t|
     t.string   "title"
-    t.string   "summay"
+    t.string   "summary"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -250,6 +250,11 @@ ActiveRecord::Schema.define(:version => 20100601185907) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "motivo"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
   create_table "users", :force => true do |t|
