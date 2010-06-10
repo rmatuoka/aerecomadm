@@ -64704,3 +64704,25 @@ Migrating to AddAttachmentsFileToSitecontact (20100609191539)
   [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
   [4;36;1mSQL (4.3ms)[0m   [0;1mdescribe `users`[0m
   [4;35;1mSQL (2.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Admin::DynamicPagesController#index (for ::1 at 2010-06-09 17:17:42) [GET]
+  [4;36;1mDynamicPage Load (14.4ms)[0m   [0;1mSELECT * FROM `dynamic_pages` [0m
+Rendering template within layouts/admin
+Rendering admin/dynamic_pages/index
+Rendered layouts/_admhelp (1.2ms)
+  [4;35;1mDynamicPage Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `dynamic_pages`[0m
+Completed in 267ms (View: 178, DB: 21) | 200 OK [http://localhost/admin/dynamic_pages]
+  [4;36;1mSQL (10.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for ::1 at 2010-06-09 17:17:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/adm/linha.png" with {:method=>:get}):
+  -e:2:in `load'
+  -e:2
+
+Rendering rescues/layout (not_found)
