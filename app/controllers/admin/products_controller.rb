@@ -22,10 +22,7 @@ class Admin::ProductsController < ApplicationController
   end
 
   def create        
-        flash[:msg] = "";
-        #PEGA EMAILS
         @Product = @Category.products.create(params[:product])        
-        
         if @Product.save
             redirect_to admin_category_products_path
         end
